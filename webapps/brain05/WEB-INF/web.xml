@@ -1,0 +1,38 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>new-adder-servlet</servlet-name>
+        <servlet-class>NewAdderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>new-adder-servlet</servlet-name>
+        <url-pattern>/new-adder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>data-error-servlet</servlet-name>
+        <servlet-class>DataErrorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>data-error-servlet</servlet-name>
+        <url-pattern>/data-error</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <exception-type>java.lang.NumberFormatException</exception-type>
+        <location>/NumberFormatError.jsp</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>divider-servlet</servlet-name>
+        <servlet-class>DividerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>divider-servlet</servlet-name>
+        <url-pattern>/divider</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/NotFoundError.jsp</location>
+    </error-page>
+</web-app>

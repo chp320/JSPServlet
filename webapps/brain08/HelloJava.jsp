@@ -1,0 +1,7 @@
+<%@page contentType="text/html; charset=euc-kr" %>
+<html>
+    <head><title>Çï·Î ÀÚ¹Ù ¾ÖÇÃ¸´</title></head>
+    <body>
+        <jsp:plugin type="applet" code="HelloJavaApplet.class" width="200" height="100" />
+    </body>
+</html>
