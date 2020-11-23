@@ -1,0 +1,9 @@
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    <tlib-version>1.0</tlib-version>
+    <short-name>tool</short-name>
+    <tag>
+        <name>startLine</name>
+        <tag-class>tool.StartLineTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
